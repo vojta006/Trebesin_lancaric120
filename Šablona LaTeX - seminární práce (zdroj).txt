@@ -64,15 +64,61 @@ Pro práci na naší seminární práci jsme používali následující software
 Níže uvedený diagram graficky znázorňuje podobu databáze. Je vymodelován v nástroji pgModeler.
 
 \includegraphics[width = \textwidth]{er_diagram.png}
-\subsection{Tabulka XXX}
+
+\subsection{Tabulka customer}
 \subsubsection{Struktura}
-\subsubsection{Provázání tabulky}
-\subsection{Tabulka XXX}
+Obsahuje základní informace o zákazníkovi, potřebné pro přihlášení k účtu. 
+
+\subsubsection{Provázání}
+Tabulka je provázána s tabulkou address, kdy každý zákazník má právě jednu adresu.
+
+\subsection{Tabulka address}
 \subsubsection{Struktura}
+Tabulka s adresami jednoznačně identifikuje existující adresu. 
 \subsubsection{Provázání tabulky}
-\subsection{Tabulka XXX}
+Je provázána s tabulkou zákazníků vazbou 1:1. 
+
+\subsection{Tabulka orders}
 \subsubsection{Struktura}
+Představuje objednávky v eshopu. Obsahuje informace o ceně, speciálních požadavcích na objednávku, atd. 
+
 \subsubsection{Provázání tabulky}
+Je prvovázána vazbou 1:1 s tabulkou payments. 
+Dále je pro zjednodušení provázána s tabulkou status{_}code.
+
+\subsection{Tabulka ordered_items}
+\subsubsection{Struktura}
+Obsahuje detailní popis objednadné položky, jako cena, množství. 
+
+\subsubsection{Provázání tabulky}
+
+\subsection{Tabulka products}
+\subsubsection{Struktura}
+Ukládá produkty v nabídce eshopu. Obsahuje jejich popis, jméno. 
+\subsubsection{Provázání tabulky}
+Vazba 1:N se stock items. 
+
+\subsection{Tabulka stock items}
+\subsubsection{Struktura}
+Eviduje položky, které jsou skladem.
+\subsubsection{Provázání tabulky}
+Vazba N:1 s tabulkou products. 
+
+\subsection{Tabulka status code}
+\subsubsection{Struktura}
+Zjednodušuje tabulku orders eliminováním duplicitních záznamů. 
+\subsubsection{Provázání tabulky}
+
+\subsection{Tabulka payments}
+\subsubsection{Struktura}
+Udržuje přehled dostupných způsobů platby objednávky. Cena objednávky, stav platby. 
+\subsubsection{Provázání tabulky}
+
+\subsection{Tabulka payments code}
+\subsubsection{Struktura}
+Zjednodušuje tabulku payments. 
+\subsubsection{Provázání tabulky}
+Tabulka je provázána s tabulkou payments vazbou 1:N.
 
 
 \end{document}
