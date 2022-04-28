@@ -42,6 +42,7 @@ Pro naši seminární práci používáme softwarové programy s následující 
     \item Mozila Firefox - Mozilla Public License 
     \item \LaTeX{} - \LaTeX{} Project Public License
     \item phpMyAdmin - GPL (GNU General Public Licence)
+    \item pgModeler -  GNU GENERAL PUBLIC LICENSE
 \end{itemize}
 
 \subsection{Hardware}
@@ -60,6 +61,9 @@ Pro práci na naší seminární práci jsme používali následující software
 \newpage
 \section{Databázová struktura}
 \subsection{ER diagram}
+Níže uvedený diagram graficky znázorňuje podobu databáze. Je vymodelován v nástroji pgModeler.
+
+\includegraphics[width = \textwidth]{er_diagram.png}
 \subsection{Tabulka XXX}
 \subsubsection{Struktura}
 \subsubsection{Provázání tabulky}
