@@ -6,13 +6,15 @@
 
 \begin{document}
 
-\title{Očkování populace Covid-19}
-\author{ "Jméno studentů v týmu" }
-\date{xx. xx. 202x}
+\title{Databáze online eshopu}
+\author{ Vojtěch Lančarič, Ondřej Závodský, Michal Banias }
+\date{1. 11. 2021}
 \maketitle
 
 \begin{abstract}
 Tento dokument byl vypracovaný společně se všemi členy týmu a ověřuje základní znalosti \LaTeX{}, databází a projektového řízení.
+
+Cílem této práce je popsat proces vytváření, popsat a rozebrat problémy při realizaci databáze a na konci představit vytvořenou databázi, která uchovává data o zboží ve eshopu, vymyšleném pro potřeby výuky.
 
 Tým pracoval samostatně a využíval všechny dostupné materiály na Moodle nebo internetu. Veškeré licenční a právní náležitosti jsou upraveny v tomto dokumentu.
 
@@ -29,14 +31,28 @@ Veškerá data osob a předmětů jsou smyšlená a nezakládají se na skutečn
 
 
 \section{Popis databáze}
-Databáze obsahuje citlivá data o osobách a jejich očkování. Zároveň v tabulkách je definice skupin, jímž je očkování zpřístupněno.
+Databáze uchovává veškerá data o zboží, uskladněném ve skladech, na prodejnách a v přepravě našeho smyšleného online obchodu. Veškerá data v databázi jsou smyšlená, vytvořená pouze pro účely databáze. Pro zacházení s databází používáme webový open source nástroj phpMyAdmin a pro správu dat používáme skriptovací jazyk MySQL. Veškerý software, který používáme pro vypracování naší seminární práce je i s licenčními požadavky uveden v sekci Licenční informace a HW požadavky v podsekcích Licence a Software. 
 
-Databáze je vytvořena na jazyce MySQL a využívá veškeré technologické vlastnosti této DB.
 \newpage
 \section{Licenční informace a HW požadavky}
+
 \subsection{Licence}
+Pro naši seminární práci používáme softwarové programy s následující licenční ochranou:
+\begin{itemize}
+    \item Mozila Firefox - Mozilla Public License 
+    \item \LaTeX{} - \LaTeX{} Project Public License
+    \item phpMyAdmin - GPL (GNU General Public Licence)
+\end{itemize}
+
 \subsection{Hardware}
 \subsection{Software}
+Pro práci na naší seminární práci jsme používali následující software. Podmínky použítí následujího softwaru jsou uvedena v sekci Licence.
+\begin{itemize}
+    \item Mozila Firefox
+    \item phpMyAdmin
+    \item \LaTeX{}
+\end{itemize}
+
 \newpage
 \section{Enumerizace hodnot}
 \subsection{Normované enumerizace}
